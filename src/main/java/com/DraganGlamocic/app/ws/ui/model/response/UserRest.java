@@ -1,6 +1,6 @@
 package com.DraganGlamocic.app.ws.ui.model.response;
 
-public class userRest {
+public class UserRest {
 
     public String getFirstName() {
         return firstName;
