@@ -43,7 +43,7 @@ public class UserController {
                     MediaType.APPLICATION_XML_VALUE
             })
 
-    public ResponseEntity<UserRest> createUser(@Valid @RequestBody UserDetailsRequestModel userDetails) {
+    public ResponseEntity<UserRest> createUser(@RequestBody UserDetailsRequestModel userDetails) {
         UserRest returnValue = new UserRest();
         returnValue.setEmail(userDetails.getEmail());
         returnValue.setFirstName(userDetails.getFirstName());
